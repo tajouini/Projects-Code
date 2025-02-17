@@ -1,0 +1,51 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+clip=false,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=   1,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax=   1,
+axis line style={draw=none},
+ticks=none,
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\node[right, align=left]
+at (0.508cm,7.62cm) {$L\{f(t)\}  \equiv  F(s) = \int_0^\infty\!\!{e^{-st}f(t)dt}$};
+\node[right, align=left]
+at (0.508cm,5.08cm) {$e = \sum_{k=0}^\infty {\frac{1}{k!}} $};
+\node[right, align=left]
+at (0.508cm,2.54cm) {$m \ddot y = -m g + C_D \cdot {\frac{1}{2}}\rho {\dot y}^2 \cdot A$};
+\node[right, align=left]
+at (0.508cm,0cm) {$\int_{0}^{\infty} x^2 e^{-x^2} dx = \frac{\sqrt{\pi}}{4}$};
+\end{axis}
+\end{tikzpicture}%
+\end{document}

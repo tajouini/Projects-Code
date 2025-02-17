@@ -1,0 +1,160 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+unbounded coords=jump,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=-1.39468,
+xmax=1.39468,
+xlabel={Real Part},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=-1.1,
+ymax= 1.1,
+ylabel={Imaginary Part},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={4th-Order Elliptic Lowpass Digital Filter},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=mycolor1, draw=none, mark size=3.5pt, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+-0.46683	0.884347\\
+-0.46683	-0.884347\\
+0.144235	0.989543\\
+0.144235	-0.989543\\
+};
+\addlegendentry{data1}
+
+\addplot [color=mycolor1, draw=none, mark size=4.0pt, mark=x, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+0.315066	0.905692\\
+0.315066	-0.905692\\
+0.534513	0.508124\\
+0.534513	-0.508124\\
+};
+\addlegendentry{data2}
+
+\addplot [color=mycolor1, dotted]
+  table[row sep=crcr]{%
+   1	   0\\
+0.997102	0.0760801\\
+0.988424	0.151719\\
+0.974016	0.226479\\
+0.953963	0.299926\\
+0.928379	0.371634\\
+0.897415	0.441188\\
+0.861248	0.508185\\
+0.820089	0.572236\\
+0.774176	0.63297\\
+0.723776	0.690035\\
+0.66918	0.7431\\
+0.610706	0.791858\\
+0.548691	0.836025\\
+0.483496	0.875347\\
+0.415498	0.909594\\
+0.345092	0.938569\\
+0.272685	0.962103\\
+0.198698	0.980061\\
+0.123559	0.992337\\
+0.0477036	0.998862\\
+-0.0284282	0.999596\\
+-0.104395	0.994536\\
+-0.179757	0.983711\\
+-0.254077	0.967184\\
+-0.326924	0.945051\\
+-0.397876	0.917439\\
+-0.466522	0.88451\\
+-0.532463	0.846453\\
+-0.595318	0.80349\\
+-0.654723	0.755869\\
+-0.710332	0.703867\\
+-0.761823	0.647785\\
+-0.808899	0.587948\\
+-0.851286	0.524703\\
+-0.888738	0.458416\\
+-0.921038	0.389472\\
+-0.948	0.318271\\
+-0.969466	0.245224\\
+-0.985313	0.170756\\
+-0.995449	0.0952987\\
+-0.999814	0.0192886\\
+-0.998384	-0.0568333\\
+-0.991166	-0.132626\\
+-0.978203	-0.207649\\
+-0.95957	-0.281469\\
+-0.935375	-0.353658\\
+-0.905757	-0.423796\\
+-0.87089	-0.491478\\
+-0.830974	-0.556311\\
+-0.786241	-0.617919\\
+-0.736951	-0.675946\\
+-0.683389	-0.730054\\
+-0.625866	-0.779931\\
+-0.564715	-0.825286\\
+-0.50029	-0.865858\\
+-0.432966	-0.90141\\
+-0.363131	-0.931738\\
+-0.291192	-0.956665\\
+-0.217565	-0.976046\\
+-0.142677	-0.989769\\
+-0.0669614	-0.997756\\
+0.00914209	-0.999958\\
+0.0851926	-0.996365\\
+0.160749	-0.986995\\
+0.235374	-0.971905\\
+0.308635	-0.951181\\
+0.380106	-0.924943\\
+0.449374	-0.893344\\
+0.516037	-0.856566\\
+0.579709	-0.814823\\
+0.640021	-0.768357\\
+0.696623	-0.717437\\
+0.749187	-0.662359\\
+0.797408	-0.603441\\
+0.841006	-0.541025\\
+0.87973	-0.475473\\
+0.913355	-0.407165\\
+0.941685	-0.336497\\
+0.964556	-0.263878\\
+0.981836	-0.18973\\
+0.993425	-0.114482\\
+0.999256	-0.03857\\
+   1	-2.22045e-16\\
+ nan	 nan\\
+-1.67362	   0\\
+1.67362	   0\\
+ nan	 nan\\
+   0	-1.32\\
+   0	1.32\\
+};
+\addlegendentry{data3}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

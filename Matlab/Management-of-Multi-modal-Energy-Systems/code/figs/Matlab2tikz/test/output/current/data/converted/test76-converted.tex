@@ -1,0 +1,144 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin= 0.5,
+xmax= 3.5,
+xtick={   1,   2,   3},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=-4.10223,
+ymax=6.9469,
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+   1	0.8575\\
+   1	   1\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+   2	 3.6\\
+   2	   4\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+   3	0.52975\\
+   3	0.901\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+   1	0.43\\
+   1	0.679375\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+   2	-3.6\\
+   2	-2.6\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+   3	0.0595\\
+   3	0.269875\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+0.8875	   1\\
+1.1125	   1\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+1.8875	   4\\
+2.1125	   4\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+2.8875	0.901\\
+3.1125	0.901\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+0.8875	0.43\\
+1.1125	0.43\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+1.8875	-3.6\\
+2.1125	-3.6\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+2.8875	0.0595\\
+3.1125	0.0595\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+0.775	0.679375\\
+0.775	0.8575\\
+1.225	0.8575\\
+1.225	0.679375\\
+0.775	0.679375\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+1.775	-2.6\\
+1.775	 3.6\\
+2.225	 3.6\\
+2.225	-2.6\\
+1.775	-2.6\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+2.775	0.269875\\
+2.775	0.52975\\
+3.225	0.52975\\
+3.225	0.269875\\
+2.775	0.269875\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+0.775	0.7625\\
+1.225	0.7625\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+1.775	 3.2\\
+2.225	 3.2\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+2.775	0.4555\\
+3.225	0.4555\\
+};
+\addplot [color=black, draw=none, mark=+, mark options={solid, red}, forget plot]
+  table[row sep=crcr]{%
+   1	0.1925\\
+};
+\end{axis}
+\end{tikzpicture}%
+\end{document}

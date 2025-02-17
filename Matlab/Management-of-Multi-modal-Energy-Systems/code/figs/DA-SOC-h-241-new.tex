@@ -1,0 +1,77 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(1.591in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=0.2,
+ymax=0.35,
+ylabel style={font=\color{white!15!black}},
+ylabel={SoC (in p.u.)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue]
+  table[row sep=crcr]{%
+1	0.299999999999997\\
+19	0.299999999999997\\
+20	0.200000000000003\\
+27	0.200000000000003\\
+28	0.342116131666771\\
+46	0.342116131666771\\
+47	0.272948106659385\\
+48	0.200000000000003\\
+97	0.200000000000003\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(3.287in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=100,
+ymax=150,
+ylabel style={font=\color{white!15!black}},
+ylabel={H (in kWh)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=red]
+  table[row sep=crcr]{%
+1	145.061069607494\\
+8	145.061069607494\\
+9	100\\
+97	100\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+
+\end{tikzpicture}%

@@ -1,0 +1,476 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(1.591in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=0.2,
+ymax=0.32,
+ylabel style={font=\color{white!15!black}},
+ylabel={SoC (in p.u.)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue]
+  table[row sep=crcr]{%
+1	0.299999999999997\\
+19	0.299999999999997\\
+20	0.200000000000003\\
+26	0.200000000000003\\
+27	0.299999999999997\\
+46	0.300000000000011\\
+47	0.23083197499264\\
+48	0.200000000000003\\
+97	0.200000000000003\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(3.287in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=100,
+ymax=150,
+ylabel style={font=\color{white!15!black}},
+ylabel={H (in kWh)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=red]
+  table[row sep=crcr]{%
+1	145.061069607494\\
+8	145.061069607494\\
+9	100\\
+97	100\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(6.679in,0.917in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=-1200,
+ymax=0,
+ylabel style={font=\color{white!15!black}},
+ylabel={P_{WT}+P_{PV}-P_L (in kW)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=green]
+  table[row sep=crcr]{%
+1	-374.142857142857\\
+2	-282.603174603175\\
+3	-160.228571428572\\
+4	-123.628571428572\\
+5	-69.7587301587303\\
+6	-20.088888888889\\
+7	-58.3587301587302\\
+8	-147.498412698413\\
+9	-136.863492063492\\
+10	-235.368253968254\\
+11	-455.657142857143\\
+12	-737.111111111111\\
+13	-977.425396825397\\
+14	-1033.0253968254\\
+15	-1054.59047619048\\
+16	-833.076190476191\\
+17	-627.631746031746\\
+18	-528.161904761905\\
+19	-487.126984126984\\
+20	-534.996825396825\\
+21	-721.07619047619\\
+22	-802.180952380952\\
+23	-710.171428571429\\
+24	-563.092063492064\\
+25	-388.177777777778\\
+26	-388.177777777778\\
+27	-213.863492063492\\
+28	-168.75873015873\\
+29	-130.488888888889\\
+30	-158.923809523809\\
+31	-152.32380952381\\
+32	-259.698412698413\\
+33	-503.48253968254\\
+34	-654.796825396825\\
+35	-633.266666666667\\
+36	-551.466666666667\\
+37	-472.361904761905\\
+38	-558.431746031746\\
+39	-691.171428571429\\
+40	-726.336507936508\\
+41	-678.726984126984\\
+42	-683.926984126984\\
+43	-672.161904761905\\
+44	-679.231746031746\\
+45	-946.520634920635\\
+46	-921.685714285715\\
+47	-1072.13015873016\\
+48	-924.450793650794\\
+49	-773.171428571429\\
+50	-551.587301587302\\
+51	-551.587301587302\\
+52	-202.593650793651\\
+53	-162.52380952381\\
+54	-160.723809523809\\
+55	-143.088888888889\\
+56	-180.75873015873\\
+57	-276.733333333333\\
+58	-452.847619047619\\
+59	-612.796825396825\\
+60	-612.301587301587\\
+61	-500.231746031746\\
+62	-454.266666666667\\
+63	-472.501587301587\\
+64	-577.406349206349\\
+65	-644.406349206349\\
+66	-581.396825396825\\
+67	-598.561904761905\\
+68	-700.701587301587\\
+69	-716.536507936508\\
+70	-899.615873015873\\
+71	-1126.36507936508\\
+72	-1009.75555555556\\
+73	-849.47619047619\\
+74	-705.631746031746\\
+75	-524.352380952381\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(4.983in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=-1,
+ymax=1,
+ylabel style={font=\color{white!15!black}},
+ylabel={Pc (in kW)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue]
+  table[row sep=crcr]{%
+1	0\\
+75	0\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(6.679in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=0,
+ymax=200,
+ylabel style={font=\color{white!15!black}},
+ylabel={Pd (in kW)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=blue]
+  table[row sep=crcr]{%
+1	0\\
+18	0\\
+19	190\\
+20	0\\
+44	0\\
+45	131.419247514018\\
+46	58.5807524860117\\
+47	0\\
+75	0\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(8.375in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=-1,
+ymax=1,
+ylabel style={font=\color{white!15!black}},
+ylabel={Hc (in kW)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=red]
+  table[row sep=crcr]{%
+1	0\\
+75	0\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(1.591in,0.917in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=0,
+ymax=45,
+ylabel style={font=\color{white!15!black}},
+ylabel={Hd (in kW)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=red]
+  table[row sep=crcr]{%
+1	0\\
+7	0\\
+8	40.5549626467448\\
+9	0\\
+75	0\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(3.287in,0.917in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=-500,
+ymax=2000,
+ylabel style={font=\color{white!15!black}},
+ylabel={Pgrid (in kW)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=green]
+  table[row sep=crcr]{%
+1	822.381917975301\\
+2	739.267781691868\\
+3	569.71011948227\\
+4	558.386758251017\\
+5	516.312681739925\\
+6	505.400353248828\\
+7	584.674519632414\\
+8	673.814202172097\\
+9	0\\
+11	0\\
+12	1047.75632071998\\
+13	1288.07060643426\\
+14	1394.3643097427\\
+15	1580.90626566416\\
+16	1359.39197994987\\
+17	1153.94753550543\\
+18	1054.47769423559\\
+19	0\\
+20	773.603614514764\\
+21	1247.39197994987\\
+22	1328.49674185464\\
+23	1236.48721804511\\
+24	1089.40785296575\\
+25	878.544569891467\\
+26	878.544569891467\\
+27	740.179281537176\\
+28	647.329757513671\\
+29	580.413058972583\\
+30	677.937458908745\\
+31	678.639598997494\\
+32	786.014202172097\\
+33	495.291036377853\\
+34	-221.670623909471\\
+35	-137.81124155105\\
+36	-176.921807186055\\
+37	-150.637028002236\\
+38	-52.5607833172403\\
+39	89.5172129897851\\
+40	130.018471650489\\
+41	106.421754671275\\
+42	54.2578272433129\\
+43	7.80758245667539\\
+44	-10.4694279276994\\
+45	0\\
+46	80.0206501668317\\
+47	1117.30044838172\\
+48	1030.98714520203\\
+49	1299.48721804511\\
+50	1077.90309106099\\
+51	1077.90309106099\\
+52	716.551972424837\\
+53	688.839598997494\\
+54	687.039598997494\\
+55	669.404678362573\\
+56	707.074519632414\\
+57	803.049122807018\\
+58	885.335589239909\\
+59	0\\
+60	-188.125307042063\\
+61	0\\
+62	712.884128143197\\
+63	998.817376775271\\
+64	1103.72213868003\\
+65	1170.72213868003\\
+66	1107.71261487051\\
+67	1124.87769423559\\
+68	1227.01737677527\\
+69	904.449593746016\\
+70	113.86347173519\\
+71	1168.86727936882\\
+72	1515.61599106268\\
+73	1375.79197994987\\
+74	1231.94753550543\\
+75	1050.66817042606\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.052in,
+height=2.843in,
+at={(4.983in,0.917in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={Steps (in every 1h)},
+ymin=-1.81898940354586e-12,
+ymax=1000,
+ylabel style={font=\color{white!15!black}},
+ylabel={P_{CHP} (in kW)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=green]
+  table[row sep=crcr]{%
+1	0\\
+8	0\\
+9	481.164050264485\\
+10	467.35650704616\\
+11	580.329704258661\\
+12	215.670579864817\\
+13	215.670579864817\\
+14	164.976876556386\\
+15	0\\
+18	-1.81898940354586e-12\\
+19	496.878997751674\\
+20	287.709000355745\\
+21	0\\
+32	0\\
+33	534.507292778371\\
+34	876.467449306297\\
+35	771.077908217716\\
+36	728.388473852722\\
+37	622.998932764141\\
+38	610.992529348986\\
+39	601.654215581644\\
+40	596.318036286019\\
+41	572.30522945571\\
+42	629.669156883671\\
+43	664.35432230523\\
+44	689.701173959445\\
+45	815.101387406617\\
+46	783.084311632871\\
+47	481.145499822127\\
+48	419.779437922448\\
+49	0\\
+57	0\\
+58	93.8278192813946\\
+59	767.407656363448\\
+60	800.42689434365\\
+61	614.917122300344\\
+62	267.698327997154\\
+63	0\\
+68	0\\
+69	338.402703664177\\
+70	785.752401280683\\
+71	483.813589469939\\
+72	20.45535396656\\
+73	0\\
+75	0\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+\end{tikzpicture}%

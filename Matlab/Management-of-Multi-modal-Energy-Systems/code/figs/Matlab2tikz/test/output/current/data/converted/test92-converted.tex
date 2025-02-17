@@ -1,0 +1,256 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{1.00000,0.20833,0.00000}%
+\definecolor{mycolor2}{rgb}{0.62500,0.00000,0.00000}%
+\definecolor{mycolor3}{rgb}{0.91667,0.00000,0.00000}%
+\definecolor{mycolor4}{rgb}{1.00000,1.00000,0.12500}%
+\definecolor{mycolor5}{rgb}{0.33333,0.00000,0.00000}%
+\definecolor{mycolor6}{rgb}{1.00000,0.79167,0.00000}%
+\definecolor{mycolor7}{rgb}{0.04167,0.00000,0.00000}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.411\figureWidth,
+height=0.265\figureHeight,
+at={(0\figureWidth,0.735\figureHeight)},
+scale only axis,
+axis on top,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin= 0.5,
+xmax= 3.5,
+xlabel={XDir normal},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin= 0.5,
+ymax= 4.5,
+ylabel={YDir normal},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+	\fill [mycolor7] (axis cs: 0.5, 0.5) rectangle (axis cs: 1.5, 1.5);
+	\fill [white!50!mycolor4] (axis cs: 0.5, 1.5) rectangle (axis cs: 1.5, 2.5);
+	\fill [mycolor3] (axis cs: 0.5, 2.5) rectangle (axis cs: 1.5, 3.5);
+	\fill [mycolor1] (axis cs: 0.5, 3.5) rectangle (axis cs: 1.5, 4.5);
+	\fill [mycolor7] (axis cs: 1.5, 0.5) rectangle (axis cs: 2.5, 1.5);
+	\fill [mycolor5] (axis cs: 1.5, 1.5) rectangle (axis cs: 2.5, 2.5);
+	\fill [orange] (axis cs: 1.5, 2.5) rectangle (axis cs: 2.5, 3.5);
+	\fill [white] (axis cs: 1.5, 3.5) rectangle (axis cs: 2.5, 4.5);
+	\fill [white] (axis cs: 2.5, 0.5) rectangle (axis cs: 3.5, 1.5);
+	\fill [mycolor6] (axis cs: 2.5, 1.5) rectangle (axis cs: 3.5, 2.5);
+	\fill [mycolor4] (axis cs: 2.5, 2.5) rectangle (axis cs: 3.5, 3.5);
+	\fill [mycolor2] (axis cs: 2.5, 3.5) rectangle (axis cs: 3.5, 4.5);
+\end{axis}
+
+\begin{axis}[%
+width=0.411\figureWidth,
+height=0.265\figureHeight,
+at={(0.54\figureWidth,0.735\figureHeight)},
+scale only axis,
+axis on top,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+x dir=reverse,
+xmin= 0.5,
+xmax= 3.5,
+xlabel={XDir reverse},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin= 0.5,
+ymax= 4.5,
+ylabel={YDir normal},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+	\fill [mycolor7] (axis cs: 0.5, 0.5) rectangle (axis cs: 1.5, 1.5);
+	\fill [white!50!mycolor4] (axis cs: 0.5, 1.5) rectangle (axis cs: 1.5, 2.5);
+	\fill [mycolor3] (axis cs: 0.5, 2.5) rectangle (axis cs: 1.5, 3.5);
+	\fill [mycolor1] (axis cs: 0.5, 3.5) rectangle (axis cs: 1.5, 4.5);
+	\fill [mycolor7] (axis cs: 1.5, 0.5) rectangle (axis cs: 2.5, 1.5);
+	\fill [mycolor5] (axis cs: 1.5, 1.5) rectangle (axis cs: 2.5, 2.5);
+	\fill [orange] (axis cs: 1.5, 2.5) rectangle (axis cs: 2.5, 3.5);
+	\fill [white] (axis cs: 1.5, 3.5) rectangle (axis cs: 2.5, 4.5);
+	\fill [white] (axis cs: 2.5, 0.5) rectangle (axis cs: 3.5, 1.5);
+	\fill [mycolor6] (axis cs: 2.5, 1.5) rectangle (axis cs: 3.5, 2.5);
+	\fill [mycolor4] (axis cs: 2.5, 2.5) rectangle (axis cs: 3.5, 3.5);
+	\fill [mycolor2] (axis cs: 2.5, 3.5) rectangle (axis cs: 3.5, 4.5);
+\end{axis}
+
+\begin{axis}[%
+width=0.411\figureWidth,
+height=0.265\figureHeight,
+at={(0\figureWidth,0.368\figureHeight)},
+scale only axis,
+axis on top,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin= 0.5,
+xmax= 3.5,
+xlabel={XDir normal},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+y dir=reverse,
+ymin= 0.5,
+ymax= 4.5,
+ylabel={YDir reverse},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+	\fill [mycolor7] (axis cs: 0.5, 0.5) rectangle (axis cs: 1.5, 1.5);
+	\fill [white!50!mycolor4] (axis cs: 0.5, 1.5) rectangle (axis cs: 1.5, 2.5);
+	\fill [mycolor3] (axis cs: 0.5, 2.5) rectangle (axis cs: 1.5, 3.5);
+	\fill [mycolor1] (axis cs: 0.5, 3.5) rectangle (axis cs: 1.5, 4.5);
+	\fill [mycolor7] (axis cs: 1.5, 0.5) rectangle (axis cs: 2.5, 1.5);
+	\fill [mycolor5] (axis cs: 1.5, 1.5) rectangle (axis cs: 2.5, 2.5);
+	\fill [orange] (axis cs: 1.5, 2.5) rectangle (axis cs: 2.5, 3.5);
+	\fill [white] (axis cs: 1.5, 3.5) rectangle (axis cs: 2.5, 4.5);
+	\fill [white] (axis cs: 2.5, 0.5) rectangle (axis cs: 3.5, 1.5);
+	\fill [mycolor6] (axis cs: 2.5, 1.5) rectangle (axis cs: 3.5, 2.5);
+	\fill [mycolor4] (axis cs: 2.5, 2.5) rectangle (axis cs: 3.5, 3.5);
+	\fill [mycolor2] (axis cs: 2.5, 3.5) rectangle (axis cs: 3.5, 4.5);
+\end{axis}
+
+\begin{axis}[%
+width=0.411\figureWidth,
+height=0.265\figureHeight,
+at={(0.54\figureWidth,0.368\figureHeight)},
+scale only axis,
+axis on top,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+x dir=reverse,
+xmin= 0.5,
+xmax= 3.5,
+xlabel={XDir reverse},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+y dir=reverse,
+ymin= 0.5,
+ymax= 4.5,
+ylabel={YDir reverse},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+	\fill [mycolor7] (axis cs: 0.5, 0.5) rectangle (axis cs: 1.5, 1.5);
+	\fill [white!50!mycolor4] (axis cs: 0.5, 1.5) rectangle (axis cs: 1.5, 2.5);
+	\fill [mycolor3] (axis cs: 0.5, 2.5) rectangle (axis cs: 1.5, 3.5);
+	\fill [mycolor1] (axis cs: 0.5, 3.5) rectangle (axis cs: 1.5, 4.5);
+	\fill [mycolor7] (axis cs: 1.5, 0.5) rectangle (axis cs: 2.5, 1.5);
+	\fill [mycolor5] (axis cs: 1.5, 1.5) rectangle (axis cs: 2.5, 2.5);
+	\fill [orange] (axis cs: 1.5, 2.5) rectangle (axis cs: 2.5, 3.5);
+	\fill [white] (axis cs: 1.5, 3.5) rectangle (axis cs: 2.5, 4.5);
+	\fill [white] (axis cs: 2.5, 0.5) rectangle (axis cs: 3.5, 1.5);
+	\fill [mycolor6] (axis cs: 2.5, 1.5) rectangle (axis cs: 3.5, 2.5);
+	\fill [mycolor4] (axis cs: 2.5, 2.5) rectangle (axis cs: 3.5, 3.5);
+	\fill [mycolor2] (axis cs: 2.5, 3.5) rectangle (axis cs: 3.5, 4.5);
+\end{axis}
+
+\begin{axis}[%
+width=0.411\figureWidth,
+height=0.265\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+axis on top,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin= 0.5,
+xmax= 3.5,
+xlabel={XDir normal},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+y dir=reverse,
+ymin= 0.5,
+ymax= 4.5,
+ylabel={YDir reverse},
+axis line style={draw=none},
+ticks=none,
+title style={font=\bfseries},
+title={like above, but axis off},
+legend style={legend cell align=left, align=left, draw=black}
+]
+	\fill [mycolor7] (axis cs: 0.5, 0.5) rectangle (axis cs: 1.5, 1.5);
+	\fill [white!50!mycolor4] (axis cs: 0.5, 1.5) rectangle (axis cs: 1.5, 2.5);
+	\fill [mycolor3] (axis cs: 0.5, 2.5) rectangle (axis cs: 1.5, 3.5);
+	\fill [mycolor1] (axis cs: 0.5, 3.5) rectangle (axis cs: 1.5, 4.5);
+	\fill [mycolor7] (axis cs: 1.5, 0.5) rectangle (axis cs: 2.5, 1.5);
+	\fill [mycolor5] (axis cs: 1.5, 1.5) rectangle (axis cs: 2.5, 2.5);
+	\fill [orange] (axis cs: 1.5, 2.5) rectangle (axis cs: 2.5, 3.5);
+	\fill [white] (axis cs: 1.5, 3.5) rectangle (axis cs: 2.5, 4.5);
+	\fill [white] (axis cs: 2.5, 0.5) rectangle (axis cs: 3.5, 1.5);
+	\fill [mycolor6] (axis cs: 2.5, 1.5) rectangle (axis cs: 3.5, 2.5);
+	\fill [mycolor4] (axis cs: 2.5, 2.5) rectangle (axis cs: 3.5, 3.5);
+	\fill [mycolor2] (axis cs: 2.5, 3.5) rectangle (axis cs: 3.5, 4.5);
+\end{axis}
+
+\begin{axis}[%
+width=0.411\figureWidth,
+height=0.265\figureHeight,
+at={(0.54\figureWidth,0\figureHeight)},
+scale only axis,
+axis on top,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+x dir=reverse,
+xmin= 0.5,
+xmax= 3.5,
+xlabel={XDir reverse},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+y dir=reverse,
+ymin= 0.5,
+ymax= 4.5,
+ylabel={YDir reverse},
+axis line style={draw=none},
+ticks=none,
+title style={font=\bfseries},
+title={like above, but axis off},
+legend style={legend cell align=left, align=left, draw=black}
+]
+	\fill [mycolor7] (axis cs: 0.5, 0.5) rectangle (axis cs: 1.5, 1.5);
+	\fill [white!50!mycolor4] (axis cs: 0.5, 1.5) rectangle (axis cs: 1.5, 2.5);
+	\fill [mycolor3] (axis cs: 0.5, 2.5) rectangle (axis cs: 1.5, 3.5);
+	\fill [mycolor1] (axis cs: 0.5, 3.5) rectangle (axis cs: 1.5, 4.5);
+	\fill [mycolor7] (axis cs: 1.5, 0.5) rectangle (axis cs: 2.5, 1.5);
+	\fill [mycolor5] (axis cs: 1.5, 1.5) rectangle (axis cs: 2.5, 2.5);
+	\fill [orange] (axis cs: 1.5, 2.5) rectangle (axis cs: 2.5, 3.5);
+	\fill [white] (axis cs: 1.5, 3.5) rectangle (axis cs: 2.5, 4.5);
+	\fill [white] (axis cs: 2.5, 0.5) rectangle (axis cs: 3.5, 1.5);
+	\fill [mycolor6] (axis cs: 2.5, 1.5) rectangle (axis cs: 3.5, 2.5);
+	\fill [mycolor4] (axis cs: 2.5, 2.5) rectangle (axis cs: 3.5, 3.5);
+	\fill [mycolor2] (axis cs: 2.5, 3.5) rectangle (axis cs: 3.5, 4.5);
+\end{axis}
+\end{tikzpicture}%
+\end{document}

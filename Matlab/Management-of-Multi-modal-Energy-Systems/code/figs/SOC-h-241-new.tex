@@ -1,0 +1,109 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=1.061in,
+height=2.843in,
+at={(1.55in,4.865in)},
+scale only axis,
+xmin=0,
+xmax=400,
+xlabel style={font=\color{white!15!black}},
+xlabel={$\delta^{CT}$ Steps},
+ymin=0.2,
+ymax=0.36,
+ylabel style={font=\color{white!15!black}},
+ylabel={SoC (in p.u.)},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+ yticklabel style = {font=\large,xshift=0.5ex},
+xticklabel style = {font=\large,xshift=0.5ex},
+ylabel style = {font=\large,xshift=0.5ex},
+xlabel style = {font=\large,xshift=0.5ex},
+y tick label style={
+	/pgf/number format/.cd,
+	fixed,
+	fixed zerofill,
+	precision=1 },  
+x tick label style={
+	/pgf/number format/.cd,
+	fixed,
+	fixed zerofill,
+	precision=0 },  
+legend style={legend cell align=left, align=left, draw=white!15!black, line width = 0.8}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+1	0.300000000000011\\
+2	0.300000000000011\\
+3	0.234210526315792\\
+4	0.199999999999989\\
+384	0.199999999999989\\
+};
+\addlegendentry{data1}
+
+\addplot [color=mycolor2]
+  table[row sep=crcr]{%
+1	0.300000000000011\\
+69	0.300000000000011\\
+73	0.199999999999989\\
+96	0.199999999999989\\
+97	0.342116131666785\\
+169	0.342116131666785\\
+173	0.272948106659385\\
+177	0.199999999999989\\
+384	0.199999999999989\\
+};
+\addlegendentry{data2}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.061in,
+height=2.843in,
+at={(3.246in,4.865in)},
+scale only axis,
+xmin=0,
+xmax=400,
+xlabel style={font=\color{white!15!black}},
+xlabel={$\delta^{CT}$ Steps},
+ymin=100,
+ymax=150,
+ylabel style={font=\color{white!15!black}},
+ylabel={H (in kWh)},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black, line width = 0.8}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+1	145.061069607494\\
+3	145.061069607494\\
+4	100\\
+384	100\\
+};
+\addlegendentry{data1}
+
+\addplot [color=mycolor2]
+  table[row sep=crcr]{%
+1	145.061069607494\\
+25	145.061069607494\\
+29	100\\
+384	100\\
+};
+\addlegendentry{data2}
+
+\end{axis}
+
+
+\end{tikzpicture}%

@@ -1,0 +1,70 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+x dir=reverse,
+xmin=   0,
+xmax=   1,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+y dir=reverse,
+ymin=   1,
+ymax= 2.8,
+axis background/.style={fill=white},
+legend style={at={(0.03,0.03)}, anchor=south west, legend cell align=left, align=left, draw=black}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+   0	   1\\
+0.05	1.05127\\
+ 0.1	1.10517\\
+0.15	1.16183\\
+ 0.2	1.2214\\
+0.25	1.28403\\
+ 0.3	1.34986\\
+0.35	1.41907\\
+ 0.4	1.49182\\
+0.45	1.56831\\
+ 0.5	1.64872\\
+0.55	1.73325\\
+ 0.6	1.82212\\
+0.65	1.91554\\
+ 0.7	2.01375\\
+0.75	2.117\\
+ 0.8	2.22554\\
+0.85	2.33965\\
+ 0.9	2.4596\\
+0.95	2.58571\\
+   1	2.71828\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

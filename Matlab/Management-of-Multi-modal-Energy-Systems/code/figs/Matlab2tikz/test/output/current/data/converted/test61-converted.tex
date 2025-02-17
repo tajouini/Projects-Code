@@ -1,0 +1,185 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=   7,
+xlabel={time},
+every outer y axis line/.append style={mycolor1},
+every y tick label/.append style={font=\color{mycolor1}},
+every y tick/.append style={mycolor1},
+ymin=  -1,
+ymax=   1,
+ytick={  -1, -0.5,    0,  0.5,    1},
+ylabel={sin(x)},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addlegendimage{/pgfplots/refstyle=plotyyref:leg0}
+\addlegendentry{data2}
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+   0	   0\\
+0.32	0.314567\\
+0.49	0.470626\\
+0.63	0.589145\\
+0.76	0.688921\\
+0.88	0.770739\\
+0.99	0.836026\\
+1.09	0.886627\\
+1.19	0.928369\\
+1.29	0.960835\\
+1.38	0.981854\\
+1.47	0.994924\\
+1.56	0.999942\\
+1.65	0.996865\\
+1.74	0.985719\\
+1.83	0.966594\\
+1.92	0.939645\\
+2.02	0.900793\\
+2.12	0.85294\\
+2.22	0.796565\\
+2.33	0.725384\\
+2.45	0.637765\\
+2.58	0.532535\\
+2.73	0.400069\\
+2.91	0.229528\\
+3.21	-0.068354\\
+3.48	-0.331985\\
+3.65	-0.486787\\
+3.79	-0.603918\\
+3.92	-0.702146\\
+4.04	-0.782336\\
+4.15	-0.845984\\
+4.25	-0.894989\\
+4.35	-0.935053\\
+4.44	-0.963131\\
+4.53	-0.983413\\
+4.62	-0.995735\\
+4.71	-0.999997\\
+ 4.8	-0.996165\\
+4.89	-0.984269\\
+4.98	-0.964405\\
+5.07	-0.936736\\
+5.17	-0.897111\\
+5.27	-0.848522\\
+5.37	-0.791455\\
+5.48	-0.719572\\
+ 5.6	-0.631267\\
+5.73	-0.5254\\
+5.88	-0.39235\\
+6.06	-0.221337\\
+6.28	-0.0031853\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=   7,
+every outer y axis line/.append style={mycolor2},
+every y tick label/.append style={font=\color{mycolor2}},
+every y tick/.append style={mycolor2},
+ymin=  -4,
+ymax=   4,
+ytick={-4, -2,  0,  2,  4},
+ylabel={3cos(x)},
+axis x line*=bottom,
+axis y line*=right,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addlegendimage{/pgfplots/refstyle=plotyyref:leg0}
+\addlegendentry{data1}
+\addplot [color=mycolor2]
+  table[row sep=crcr]{%
+   0	   3\\
+0.07	2.99265\\
+0.14	2.97065\\
+0.21	2.93409\\
+0.29	2.87473\\
+0.37	2.79698\\
+0.46	2.68816\\
+0.55	2.55757\\
+0.65	2.38825\\
+0.76	2.17451\\
+0.88	1.91145\\
+1.02	1.5701\\
+1.19	1.11498\\
+1.41	0.480313\\
+   2	-1.24844\\
+2.17	-1.69196\\
+2.31	-2.0211\\
+2.44	-2.29145\\
+2.55	-2.49016\\
+2.65	-2.64475\\
+2.74	-2.76132\\
+2.83	-2.85554\\
+2.91	-2.91991\\
+2.99	-2.9656\\
+3.06	-2.99002\\
+3.13	-2.9998\\
+ 3.2	-2.99488\\
+3.27	-2.9753\\
+3.34	-2.94115\\
+3.42	-2.88448\\
+ 3.5	-2.80937\\
+3.59	-2.70342\\
+3.68	-2.57558\\
+3.78	-2.40914\\
+3.89	-2.19832\\
+4.01	-1.93813\\
+4.15	-1.59963\\
+4.31	-1.17485\\
+4.52	-0.573613\\
+5.18	1.35227\\
+5.34	1.76164\\
+5.48	2.08325\\
+ 5.6	2.3267\\
+5.71	2.52053\\
+5.81	2.67036\\
+ 5.9	2.78244\\
+5.99	2.87198\\
+6.07	2.93209\\
+6.14	2.9693\\
+6.21	2.99197\\
+6.28	2.99998\\
+};
+\addlegendentry{data2}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

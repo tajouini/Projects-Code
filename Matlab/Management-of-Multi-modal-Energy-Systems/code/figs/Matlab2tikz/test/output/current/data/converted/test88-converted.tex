@@ -1,0 +1,213 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.282\figureWidth,
+height=0.583\figureHeight,
+at={(0\figureWidth,0.376\figureHeight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=   1,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax=   1,
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={$\text{f(x)=x}^\text{2}$},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+   0	   0\\
+0.03	0.0009\\
+0.06	0.0036\\
+0.09	0.0081\\
+0.12	0.0144\\
+0.15	0.0225\\
+0.18	0.0324\\
+0.21	0.0441\\
+0.24	0.0576\\
+0.27	0.0729\\
+ 0.3	0.09\\
+0.33	0.1089\\
+0.37	0.1369\\
+0.41	0.1681\\
+0.45	0.2025\\
+0.49	0.2401\\
+0.53	0.2809\\
+0.57	0.3249\\
+0.61	0.3721\\
+0.65	0.4225\\
+0.69	0.4761\\
+0.73	0.5329\\
+0.77	0.5929\\
+0.81	0.6561\\
+0.85	0.7225\\
+0.89	0.7921\\
+0.94	0.8836\\
+0.99	0.9801\\
+   1	   1\\
+};
+\addlegendentry{$\text{(0:0.05:1).}^\text{2}\text{ vs 0:0.05:1}$}
+
+\end{axis}
+
+\begin{axis}[%
+width=0.243\figureWidth,
+height=0.583\figureHeight,
+at={(0.422\figureWidth,0\figureHeight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=   1,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax=   1,
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+   0	   0\\
+0.17	0.00083521\\
+0.24	0.00331776\\
+0.29	0.00707281\\
+0.33	0.0118592\\
+0.37	0.0187416\\
+ 0.4	0.0256\\
+0.43	0.034188\\
+0.46	0.0447746\\
+0.49	0.057648\\
+0.52	0.0731162\\
+0.55	0.0915063\\
+0.58	0.113165\\
+0.61	0.138458\\
+0.63	0.15753\\
+0.65	0.178506\\
+0.67	0.201511\\
+0.69	0.226671\\
+0.71	0.254117\\
+0.73	0.283982\\
+0.75	0.316406\\
+0.77	0.35153\\
+0.79	0.389501\\
+0.81	0.430467\\
+0.83	0.474583\\
+0.85	0.522006\\
+0.88	0.599695\\
+0.91	0.68575\\
+0.94	0.780749\\
+0.97	0.885293\\
+   1	   1\\
+};
+\addlegendentry{$\text{(0:0.05:1).}^\text{4}\text{ vs 0:0.05:1}$}
+
+\end{axis}
+
+\begin{axis}[%
+width=0.238\figureWidth,
+height=0.621\figureHeight,
+at={(0.762\figureWidth,0.282\figureHeight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=   1,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax=   1,
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+   0	   0\\
+0.01	0.316228\\
+0.02	0.37606\\
+0.03	0.416179\\
+0.04	0.447214\\
+0.05	0.472871\\
+0.06	0.494923\\
+0.08	0.53183\\
+ 0.1	0.562341\\
+0.12	0.588566\\
+0.14	0.611691\\
+0.16	0.632456\\
+0.19	0.66022\\
+0.22	0.684866\\
+0.25	0.707107\\
+0.29	0.733837\\
+0.33	0.757929\\
+0.37	0.779921\\
+0.42	0.80503\\
+0.47	0.827989\\
+0.53	0.853236\\
+0.59	0.876421\\
+0.66	0.901334\\
+0.74	0.927487\\
+0.82	0.951598\\
+0.91	0.976698\\
+   1	   1\\
+};
+\addlegendentry{$\text{(0:0.05:1).}^\text{(}\text{1/4) vs 0:0.05:1}$}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.134\figureWidth,
+height=1.134\figureHeight,
+at={(-0.079\figureWidth,-0.079\figureHeight)},
+scale only axis,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=   1,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax=   1,
+axis line style={draw=none},
+ticks=none,
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\node[below right, align=left, draw=black]
+at (rel axis cs:0.367,0.552) {$\text{f}^\text{2}$};
+\end{axis}
+\end{tikzpicture}%
+\end{document}

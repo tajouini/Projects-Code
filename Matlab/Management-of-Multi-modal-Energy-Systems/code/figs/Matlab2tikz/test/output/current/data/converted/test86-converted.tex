@@ -1,0 +1,83 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=0.419\figureHeight,
+at={(0\figureWidth,0.581\figureHeight)},
+scale only axis,
+axis on top,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin= 0.5,
+xmax=20.5,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+y dir=reverse,
+ymin= 0.5,
+ymax=20.5,
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [forget plot] graphics [xmin= 0.5, xmax=20.5, ymin= 0.5, ymax=20.5] {test86-converted-1.png};
+\end{axis}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=0.419\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+axis on top,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin= 0.5,
+xmax= 2.5,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin= 0.5,
+ymax= 2.5,
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Integer Alpha Data},
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=black, line width=2.0pt]
+  table[row sep=crcr]{%
+ 0.5	 0.5\\
+ 2.5	 2.5\\
+};
+\addlegendentry{data1}
+
+\addplot [color=black, line width=2.0pt]
+  table[row sep=crcr]{%
+ 0.5	 2.5\\
+ 2.5	 0.5\\
+};
+\addlegendentry{data2}
+
+\addplot [forget plot] graphics [xmin= 0.5, xmax= 2.5, ymin= 0.5, ymax= 2.5] {test86-converted-2.png};
+\end{axis}
+\end{tikzpicture}%
+\end{document}

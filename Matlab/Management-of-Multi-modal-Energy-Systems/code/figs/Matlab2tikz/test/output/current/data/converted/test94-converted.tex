@@ -1,0 +1,168 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.00000,1.00000,1.00000}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=0.419\figureHeight,
+at={(0\figureWidth,0.581\figureHeight)},
+scale only axis,
+bar width=0.8,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=-0.2,
+xmax= 6.2,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax=  40,
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot[ybar stacked, fill=mycolor1, draw=black, area legend] table[row sep=crcr] {%
+   1	   6\\
+   2	   4\\
+   3	   4\\
+   4	   1\\
+   5	   1\\
+};
+\addplot[forget plot, color=black] table[row sep=crcr] {%
+-0.2	   0\\
+ 6.2	   0\\
+};
+\addlegendentry{data1}
+
+\addplot[ybar stacked, fill=mycolor2, draw=black, area legend] table[row sep=crcr] {%
+   1	  13\\
+   2	   5\\
+   3	   5\\
+   4	   1\\
+   5	   2\\
+};
+\addplot[forget plot, color=black] table[row sep=crcr] {%
+-0.2	   0\\
+ 6.2	   0\\
+};
+\addlegendentry{data2}
+
+\addplot[ybar stacked, fill=mycolor3, draw=black, area legend] table[row sep=crcr] {%
+   1	  19\\
+   2	   8\\
+   3	   7\\
+   4	   1\\
+   5	   2\\
+};
+\addplot[forget plot, color=black] table[row sep=crcr] {%
+-0.2	   0\\
+ 6.2	   0\\
+};
+\addlegendentry{data3}
+
+\addplot [color=red, line width=2.0pt]
+  table[row sep=crcr]{%
+   1	   1\\
+   2	   4\\
+   3	   9\\
+   4	   3\\
+   5	   5\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=0.419\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+bar width=0.75,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=  40,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=-0.175,
+ymax=6.175,
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot[xbar stacked, fill=mycolor4, area legend] table[row sep=crcr] {%
+   6	   1\\
+   4	   2\\
+   4	   3\\
+   1	   4\\
+   1	   5\\
+};
+\addplot[forget plot, color=black] table[row sep=crcr] {%
+   0	-0.175\\
+   0	6.175\\
+};
+\addlegendentry{data1}
+
+\addplot[xbar stacked, fill=mycolor2, draw=black, area legend] table[row sep=crcr] {%
+  13	   1\\
+   5	   2\\
+   5	   3\\
+   1	   4\\
+   2	   5\\
+};
+\addplot[forget plot, color=black] table[row sep=crcr] {%
+   0	-0.175\\
+   0	6.175\\
+};
+\addlegendentry{data2}
+
+\addplot[xbar stacked, fill=mycolor3, draw=black, area legend] table[row sep=crcr] {%
+  19	   1\\
+   8	   2\\
+   7	   3\\
+   1	   4\\
+   2	   5\\
+};
+\addplot[forget plot, color=black] table[row sep=crcr] {%
+   0	-0.175\\
+   0	6.175\\
+};
+\addlegendentry{data3}
+
+\addplot [color=blue, line width=2.0pt]
+  table[row sep=crcr]{%
+   1	   1\\
+   4	   2\\
+   9	   3\\
+   3	   4\\
+   5	   5\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

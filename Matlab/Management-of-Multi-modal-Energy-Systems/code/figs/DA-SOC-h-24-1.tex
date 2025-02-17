@@ -1,0 +1,157 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+	 yticklabel style = {font=\large,xshift=0.5ex},
+	xticklabel style = {font=\large,xshift=0.5ex},
+	ylabel style = {font=\large,xshift=0.5ex},
+	xlabel style = {font=\large,xshift=0.5ex},
+	title style = {font=\large,xshift=0.5ex},
+	title = {(a)},
+	y tick label style={
+		/pgf/number format/.cd,
+		fixed,
+		fixed zerofill,
+		precision=1 },  
+	x tick label style={
+		/pgf/number format/.cd,
+		fixed,
+		fixed zerofill,
+		precision=0 },  
+width=1.603in,
+height=2.843in,
+at={(1.383in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={$\delta^{DA}$ Steps},
+ymin=0.2,
+ymax=0.8,
+%ylabel style={font=\color{white!15!black}},
+ylabel={$x^{DA}_{SoC}$ (in p.u.)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black, line width = 0.8}
+]
+\addplot [color=blue, line width = 0.8]
+  table[row sep=crcr]{%
+1	0.325000000000003\\
+2	0.5625\\
+4	0.5625\\
+5	0.799999999999997\\
+8	0.799999999999997\\
+9	0.628362830159517\\
+10	0.365204935422682\\
+11	0.602704935422679\\
+18	0.602704935422679\\
+19	0.339547040685844\\
+20	0.200000000000003\\
+25	0.200000000000003\\
+26	0.264002881514529\\
+34	0.264002881514529\\
+35	0.501502881514526\\
+40	0.501502881514526\\
+41	0.445491431687543\\
+42	0.68299143168754\\
+43	0.678882177762972\\
+44	0.536106001396234\\
+45	0.272948106659385\\
+46	0.200000000000003\\
+53	0.200000000000003\\
+54	0.4375\\
+59	0.4375\\
+60	0.200000000000003\\
+64	0.200000000000003\\
+65	0.4375\\
+69	0.4375\\
+70	0.200000000000003\\
+75	0.200000000000003\\
+76	0.325000000000003\\
+81	0.325000000000003\\
+82	0.5625\\
+83	0.5625\\
+84	0.799999999999997\\
+85	0.536842105263162\\
+86	0.416432912590977\\
+87	0.410638526233768\\
+88	0.38497645394169\\
+89	0.316611733888266\\
+90	0.269879055518558\\
+91	0.227299632931491\\
+92	0.225462063197838\\
+94	0.225462063197838\\
+95	0.200000000000003\\
+97	0.674999999999997\\
+};
+%\addlegendentry{$x^{DA}_{SoC}$}
+
+\end{axis}
+
+\begin{axis}[%
+	 yticklabel style = {font=\large,xshift=0.5ex},
+	xticklabel style = {font=\large,xshift=0.5ex},
+	ylabel style = {font=\large,xshift=0.5ex},
+	title style = {font=\large,xshift=0.5ex},
+	title = {(b)},
+	xlabel style = {font=\large,xshift=0.5ex},
+	y tick label style={
+		/pgf/number format/.cd,
+		fixed,
+		fixed zerofill,
+		precision=1 },  
+	x tick label style={
+		/pgf/number format/.cd,
+		fixed,
+		fixed zerofill,
+		precision=0 },  
+width=1.603in,
+height=2.843in,
+at={(3.63in,4.865in)},
+scale only axis,
+xmin=1,
+xmax=96,
+xlabel style={font=\color{white!15!black}},
+xlabel={$\delta^{DA}$ Steps},
+ymin=100,
+ymax=260,
+%ylabel style={font=\color{white!15!black}},
+ylabel={$H^{DA}$ (in kWh)},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black, line width = 0.8}
+]
+\addplot [color=red, line width = 0.8]
+  table[row sep=crcr]{%
+1	126.265860310684\\
+2	185.817621249852\\
+4	185.817621249852\\
+5	254.013992647931\\
+6	254.013992647931\\
+7	145.061069607494\\
+8	100\\
+77	100\\
+78	117.769477054429\\
+79	119.690501600854\\
+82	119.690501600854\\
+83	200.201588995612\\
+84	100\\
+85	186.564686351239\\
+95	186.564686351239\\
+97	100\\
+};
+%\addlegendentry{$h^{DA}$}
+
+\end{axis}
+\end{tikzpicture}%

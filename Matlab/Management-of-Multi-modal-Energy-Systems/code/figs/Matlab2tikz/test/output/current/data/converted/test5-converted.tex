@@ -1,0 +1,669 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,1.00000,1.00000}%
+\definecolor{mycolor2}{rgb}{1.00000,0.00000,1.00000}%
+\definecolor{mycolor3}{rgb}{1.00000,1.00000,0.00000}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=  11,
+xtick={   1,   2,   3,   4,   5,   6,   7,   8,   9,  10},
+xticklabels={{6},{8},{10},{12},{14},{17},{19},{21},{23},{25}},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax= 140,
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=blue, draw=none, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   1	  10\\
+};
+\addlegendentry{data1}
+
+\addplot [color=blue, draw=none, mark size=4.0pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   2	  10\\
+};
+\addlegendentry{data2}
+
+\addplot [color=blue, draw=none, mark size=5.0pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   3	  10\\
+};
+\addlegendentry{data3}
+
+\addplot [color=blue, draw=none, mark size=6.0pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   4	  10\\
+};
+\addlegendentry{data4}
+
+\addplot [color=blue, draw=none, mark size=7.0pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   5	  10\\
+};
+\addlegendentry{data5}
+
+\addplot [color=blue, draw=none, mark size=8.5pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   6	  10\\
+};
+\addlegendentry{data6}
+
+\addplot [color=blue, draw=none, mark size=9.5pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   7	  10\\
+};
+\addlegendentry{data7}
+
+\addplot [color=blue, draw=none, mark size=10.5pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   8	  10\\
+};
+\addlegendentry{data8}
+
+\addplot [color=blue, draw=none, mark size=11.5pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+   9	  10\\
+};
+\addlegendentry{data9}
+
+\addplot [color=blue, draw=none, mark size=12.5pt, mark=x, mark options={solid, blue}]
+  table[row sep=crcr]{%
+  10	  10\\
+};
+\addlegendentry{data10}
+
+\addplot [color=red, draw=none, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   1	  20\\
+};
+\addlegendentry{data11}
+
+\addplot [color=red, draw=none, mark size=6.9pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   2	  20\\
+};
+\addlegendentry{data12}
+
+\addplot [color=red, draw=none, mark size=8.6pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   3	  20\\
+};
+\addlegendentry{data13}
+
+\addplot [color=red, draw=none, mark size=10.4pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   4	  20\\
+};
+\addlegendentry{data14}
+
+\addplot [color=red, draw=none, mark size=12.1pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   5	  20\\
+};
+\addlegendentry{data15}
+
+\addplot [color=red, draw=none, mark size=14.7pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   6	  20\\
+};
+\addlegendentry{data16}
+
+\addplot [color=red, draw=none, mark size=16.4pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   7	  20\\
+};
+\addlegendentry{data17}
+
+\addplot [color=red, draw=none, mark size=18.1pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   8	  20\\
+};
+\addlegendentry{data18}
+
+\addplot [color=red, draw=none, mark size=19.8pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+   9	  20\\
+};
+\addlegendentry{data19}
+
+\addplot [color=red, draw=none, mark size=21.6pt, mark=diamond, mark options={solid, red}]
+  table[row sep=crcr]{%
+  10	  20\\
+};
+\addlegendentry{data20}
+
+\addplot [color=green, draw=none, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   1	  30\\
+};
+\addlegendentry{data21}
+
+\addplot [color=green, draw=none, mark size=4.0pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   2	  30\\
+};
+\addlegendentry{data22}
+
+\addplot [color=green, draw=none, mark size=5.0pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   3	  30\\
+};
+\addlegendentry{data23}
+
+\addplot [color=green, draw=none, mark size=6.0pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   4	  30\\
+};
+\addlegendentry{data24}
+
+\addplot [color=green, draw=none, mark size=7.0pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   5	  30\\
+};
+\addlegendentry{data25}
+
+\addplot [color=green, draw=none, mark size=8.5pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   6	  30\\
+};
+\addlegendentry{data26}
+
+\addplot [color=green, draw=none, mark size=9.5pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   7	  30\\
+};
+\addlegendentry{data27}
+
+\addplot [color=green, draw=none, mark size=10.5pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   8	  30\\
+};
+\addlegendentry{data28}
+
+\addplot [color=green, draw=none, mark size=11.5pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+   9	  30\\
+};
+\addlegendentry{data29}
+
+\addplot [color=green, draw=none, mark size=12.5pt, mark=o, mark options={solid, green}]
+  table[row sep=crcr]{%
+  10	  30\\
+};
+\addlegendentry{data30}
+
+\addplot [color=mycolor1, draw=none, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   1	  40\\
+};
+\addlegendentry{data31}
+
+\addplot [color=mycolor1, draw=none, mark size=1.3pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   2	  40\\
+};
+\addlegendentry{data32}
+
+\addplot [color=mycolor1, draw=none, mark size=1.7pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   3	  40\\
+};
+\addlegendentry{data33}
+
+\addplot [color=mycolor1, draw=none, mark size=2.0pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   4	  40\\
+};
+\addlegendentry{data34}
+
+\addplot [color=mycolor1, draw=none, mark size=2.3pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   5	  40\\
+};
+\addlegendentry{data35}
+
+\addplot [color=mycolor1, draw=none, mark size=2.8pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   6	  40\\
+};
+\addlegendentry{data36}
+
+\addplot [color=mycolor1, draw=none, mark size=3.2pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   7	  40\\
+};
+\addlegendentry{data37}
+
+\addplot [color=mycolor1, draw=none, mark size=3.5pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   8	  40\\
+};
+\addlegendentry{data38}
+
+\addplot [color=mycolor1, draw=none, mark size=3.8pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   9	  40\\
+};
+\addlegendentry{data39}
+
+\addplot [color=mycolor1, draw=none, mark size=4.2pt, mark=*, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+  10	  40\\
+};
+\addlegendentry{data40}
+
+\addplot [color=mycolor2, draw=none, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   1	  50\\
+};
+\addlegendentry{data41}
+
+\addplot [color=mycolor2, draw=none, mark size=4.0pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   2	  50\\
+};
+\addlegendentry{data42}
+
+\addplot [color=mycolor2, draw=none, mark size=5.0pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   3	  50\\
+};
+\addlegendentry{data43}
+
+\addplot [color=mycolor2, draw=none, mark size=6.0pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   4	  50\\
+};
+\addlegendentry{data44}
+
+\addplot [color=mycolor2, draw=none, mark size=7.0pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   5	  50\\
+};
+\addlegendentry{data45}
+
+\addplot [color=mycolor2, draw=none, mark size=8.5pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   6	  50\\
+};
+\addlegendentry{data46}
+
+\addplot [color=mycolor2, draw=none, mark size=9.5pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   7	  50\\
+};
+\addlegendentry{data47}
+
+\addplot [color=mycolor2, draw=none, mark size=10.5pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   8	  50\\
+};
+\addlegendentry{data48}
+
+\addplot [color=mycolor2, draw=none, mark size=11.5pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   9	  50\\
+};
+\addlegendentry{data49}
+
+\addplot [color=mycolor2, draw=none, mark size=12.5pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+  10	  50\\
+};
+\addlegendentry{data50}
+
+\addplot [color=mycolor3, draw=none, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   1	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=4.0pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   2	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=5.0pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   3	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=6.0pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   4	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=7.0pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   5	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=8.5pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   6	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=9.5pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   7	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=10.5pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   8	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=11.5pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+   9	  60\\
+};
+\addplot [color=mycolor3, draw=none, mark size=12.5pt, mark=asterisk, mark options={solid, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+  10	  60\\
+};
+\addplot [color=blue, draw=none, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   1	  70\\
+};
+\addplot [color=blue, draw=none, mark size=2.8pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   2	  70\\
+};
+\addplot [color=blue, draw=none, mark size=3.5pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   3	  70\\
+};
+\addplot [color=blue, draw=none, mark size=4.2pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   4	  70\\
+};
+\addplot [color=blue, draw=none, mark size=4.9pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   5	  70\\
+};
+\addplot [color=blue, draw=none, mark size=6.0pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   6	  70\\
+};
+\addplot [color=blue, draw=none, mark size=6.7pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   7	  70\\
+};
+\addplot [color=blue, draw=none, mark size=7.4pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   8	  70\\
+};
+\addplot [color=blue, draw=none, mark size=8.1pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   9	  70\\
+};
+\addplot [color=blue, draw=none, mark size=8.8pt, mark=square, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+  10	  70\\
+};
+\addplot [color=mycolor2, draw=none, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   1	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=2.7pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   2	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=3.3pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   3	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=4.0pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   4	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=4.7pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   5	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=5.7pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   6	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=6.3pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   7	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=7.0pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   8	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=7.7pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+   9	  80\\
+};
+\addplot [color=mycolor2, draw=none, mark size=8.3pt, mark=triangle, mark options={solid, rotate=180, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+  10	  80\\
+};
+\addplot [color=black, draw=none, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   1	  90\\
+};
+\addplot [color=black, draw=none, mark size=2.7pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   2	  90\\
+};
+\addplot [color=black, draw=none, mark size=3.3pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   3	  90\\
+};
+\addplot [color=black, draw=none, mark size=4.0pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   4	  90\\
+};
+\addplot [color=black, draw=none, mark size=4.7pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   5	  90\\
+};
+\addplot [color=black, draw=none, mark size=5.7pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   6	  90\\
+};
+\addplot [color=black, draw=none, mark size=6.3pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   7	  90\\
+};
+\addplot [color=black, draw=none, mark size=7.0pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   8	  90\\
+};
+\addplot [color=black, draw=none, mark size=7.7pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+   9	  90\\
+};
+\addplot [color=black, draw=none, mark size=8.3pt, mark=triangle, mark options={solid, black}, forget plot]
+  table[row sep=crcr]{%
+  10	  90\\
+};
+\addplot [color=red, draw=none, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   1	 100\\
+};
+\addplot [color=red, draw=none, mark size=2.7pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   2	 100\\
+};
+\addplot [color=red, draw=none, mark size=3.3pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   3	 100\\
+};
+\addplot [color=red, draw=none, mark size=4.0pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   4	 100\\
+};
+\addplot [color=red, draw=none, mark size=4.7pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   5	 100\\
+};
+\addplot [color=red, draw=none, mark size=5.7pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   6	 100\\
+};
+\addplot [color=red, draw=none, mark size=6.3pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   7	 100\\
+};
+\addplot [color=red, draw=none, mark size=7.0pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   8	 100\\
+};
+\addplot [color=red, draw=none, mark size=7.7pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+   9	 100\\
+};
+\addplot [color=red, draw=none, mark size=8.3pt, mark=triangle, mark options={solid, rotate=90, red}, forget plot]
+  table[row sep=crcr]{%
+  10	 100\\
+};
+\addplot [color=green, draw=none, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   1	 110\\
+};
+\addplot [color=green, draw=none, mark size=2.7pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   2	 110\\
+};
+\addplot [color=green, draw=none, mark size=3.3pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   3	 110\\
+};
+\addplot [color=green, draw=none, mark size=4.0pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   4	 110\\
+};
+\addplot [color=green, draw=none, mark size=4.7pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   5	 110\\
+};
+\addplot [color=green, draw=none, mark size=5.7pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   6	 110\\
+};
+\addplot [color=green, draw=none, mark size=6.3pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   7	 110\\
+};
+\addplot [color=green, draw=none, mark size=7.0pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   8	 110\\
+};
+\addplot [color=green, draw=none, mark size=7.7pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+   9	 110\\
+};
+\addplot [color=green, draw=none, mark size=8.3pt, mark=triangle, mark options={solid, rotate=270, green}, forget plot]
+  table[row sep=crcr]{%
+  10	 110\\
+};
+\addplot [color=mycolor1, draw=none, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   1	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=4.0pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   2	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=5.0pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   3	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=6.0pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   4	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=7.0pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   5	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=8.5pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   6	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=9.5pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   7	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=10.5pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   8	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=11.5pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+   9	 120\\
+};
+\addplot [color=mycolor1, draw=none, mark size=12.5pt, mark=star, mark options={solid, mycolor1}, forget plot]
+  table[row sep=crcr]{%
+  10	 120\\
+};
+\addplot [color=blue, draw=none, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   1	 130\\
+};
+\addplot [color=blue, draw=none, mark size=4.0pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   2	 130\\
+};
+\addplot [color=blue, draw=none, mark size=5.0pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   3	 130\\
+};
+\addplot [color=blue, draw=none, mark size=6.0pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   4	 130\\
+};
+\addplot [color=blue, draw=none, mark size=7.0pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   5	 130\\
+};
+\addplot [color=blue, draw=none, mark size=8.5pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   6	 130\\
+};
+\addplot [color=blue, draw=none, mark size=9.5pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   7	 130\\
+};
+\addplot [color=blue, draw=none, mark size=10.5pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   8	 130\\
+};
+\addplot [color=blue, draw=none, mark size=11.5pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+   9	 130\\
+};
+\addplot [color=blue, draw=none, mark size=12.5pt, mark=star, mark options={solid, blue}, forget plot]
+  table[row sep=crcr]{%
+  10	 130\\
+};
+\end{axis}
+\end{tikzpicture}%
+\end{document}

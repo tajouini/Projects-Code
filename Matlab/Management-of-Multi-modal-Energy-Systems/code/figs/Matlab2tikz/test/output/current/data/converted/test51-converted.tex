@@ -1,0 +1,63 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+every outer x axis line/.append style={green},
+every x tick label/.append style={font=\color{green}},
+every x tick/.append style={green},
+xmin=   0,
+xmax=  15,
+every outer y axis line/.append style={blue},
+every y tick label/.append style={font=\color{blue}},
+every y tick/.append style={blue},
+ymin=  -1,
+ymax=   1,
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+   1	0.841471\\
+   2	0.909297\\
+   3	0.14112\\
+   4	-0.756802\\
+   5	-0.958924\\
+   6	-0.279415\\
+   7	0.656987\\
+   8	0.989358\\
+   9	0.412118\\
+  10	-0.544021\\
+  11	-0.99999\\
+  12	-0.536573\\
+  13	0.420167\\
+  14	0.990607\\
+  15	0.650288\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

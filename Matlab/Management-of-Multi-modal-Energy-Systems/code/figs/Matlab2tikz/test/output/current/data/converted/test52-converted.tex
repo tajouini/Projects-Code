@@ -1,0 +1,226 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+every outer x axis line/.append style={red},
+every x tick label/.append style={font=\color{red}},
+every x tick/.append style={red},
+xmin=   0,
+xmax=  40,
+xtick={ 0,  8, 16, 24, 32, 40},
+every outer y axis line/.append style={red},
+every y tick label/.append style={font=\color{red}},
+every y tick/.append style={red},
+ymin=  -1,
+ymax=   2,
+ytick={  -1, -0.4,  0.2,  0.8,  1.4,    2},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=red]
+  table[row sep=crcr]{%
+   0	   2\\
+ 0.2	1.78194\\
+ 0.4	1.5351\\
+ 0.7	1.1331\\
+ 1.2	0.452947\\
+ 1.4	0.199961\\
+ 1.6	-0.0324439\\
+ 1.8	-0.23916\\
+   2	-0.416147\\
+ 2.1	-0.492533\\
+ 2.2	-0.560477\\
+ 2.3	-0.619792\\
+ 2.4	-0.670358\\
+ 2.5	-0.712128\\
+ 2.6	-0.745121\\
+ 2.7	-0.769423\\
+ 2.8	-0.785185\\
+ 2.9	-0.792619\\
+   3	-0.791994\\
+ 3.1	-0.783635\\
+ 3.2	-0.767919\\
+ 3.3	-0.745268\\
+ 3.5	-0.681059\\
+ 3.7	-0.595158\\
+ 3.9	-0.492157\\
+ 4.2	-0.316297\\
+ 4.8	0.05147\\
+   5	0.162093\\
+ 5.2	0.260287\\
+ 5.4	0.343077\\
+ 5.6	0.408193\\
+ 5.8	0.454113\\
+   6	0.480085\\
+ 6.2	0.486118\\
+ 6.4	0.472945\\
+ 6.6	0.441969\\
+ 6.8	0.395181\\
+   7	0.335068\\
+ 7.3	0.22627\\
+ 7.8	0.0220226\\
+ 8.1	-0.0964531\\
+ 8.4	-0.199726\\
+ 8.6	-0.256121\\
+ 8.8	-0.300405\\
+   9	-0.33132\\
+ 9.2	-0.348158\\
+ 9.4	-0.350769\\
+ 9.6	-0.339548\\
+ 9.8	-0.315399\\
+  10	-0.279691\\
+10.2	-0.234185\\
+10.5	-0.152172\\
+11.5	0.143201\\
+11.7	0.189079\\
+11.9	0.226207\\
+12.1	0.253392\\
+12.3	0.269855\\
+12.5	0.275255\\
+12.7	0.269683\\
+12.9	0.253654\\
+13.1	0.228071\\
+13.4	0.174596\\
+13.7	0.107866\\
+14.7	-0.127805\\
+  15	-0.17875\\
+15.2	-0.203195\\
+15.4	-0.21907\\
+15.6	-0.225949\\
+15.8	-0.223768\\
+  16	-0.212813\\
+16.3	-0.181378\\
+16.6	-0.135017\\
+  17	-0.0579291\\
+17.7	0.0830239\\
+  18	0.132063\\
+18.3	0.168031\\
+18.6	0.18816\\
+18.9	0.191144\\
+19.2	0.177211\\
+19.5	0.148059\\
+19.8	0.106665\\
+20.3	0.0215358\\
+20.9	-0.0806055\\
+21.2	-0.121212\\
+21.5	-0.150092\\
+21.8	-0.165006\\
+22.1	-0.164993\\
+22.4	-0.150423\\
+22.7	-0.122933\\
+23.1	-0.0710263\\
+24.3	0.102335\\
+24.6	0.129537\\
+24.9	0.14469\\
+25.2	0.146726\\
+25.5	0.135755\\
+25.8	0.113025\\
+26.2	0.0684436\\
+27.5	-0.0969338\\
+27.8	-0.119409\\
+28.1	-0.130876\\
+28.4	-0.130541\\
+28.7	-0.118666\\
+  29	-0.0965236\\
+29.4	-0.0548504\\
+30.6	0.0840729\\
+30.9	0.105755\\
+31.2	0.117684\\
+31.5	0.118981\\
+31.8	0.109721\\
+32.2	0.082812\\
+32.7	0.0326006\\
+33.6	-0.0646686\\
+  34	-0.0942856\\
+34.3	-0.106559\\
+34.6	-0.109191\\
+34.9	-0.102106\\
+35.3	-0.0790127\\
+35.8	-0.0341216\\
+36.8	0.0641552\\
+37.2	0.0895927\\
+37.6	0.100514\\
+  38	0.0955074\\
+38.4	0.0756703\\
+38.9	0.0353574\\
+  40	-0.0635179\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=  20,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax=   1,
+axis x line*=top,
+axis y line*=right,
+legend style={legend cell align=left, align=left, draw=black, fill=white!80!black}
+]
+\addplot [color=black]
+  table[row sep=crcr]{%
+   1	   1\\
+ 1.2	0.833333\\
+ 1.4	0.714286\\
+ 1.6	0.625\\
+ 1.8	0.555556\\
+   2	 0.5\\
+ 2.2	0.454545\\
+ 2.4	0.416667\\
+ 2.6	0.384615\\
+ 2.8	0.357143\\
+   3	0.333333\\
+ 3.2	0.3125\\
+ 3.4	0.294118\\
+ 3.8	0.263158\\
+ 4.2	0.238095\\
+ 4.6	0.217391\\
+   5	 0.2\\
+ 5.6	0.178571\\
+ 6.2	0.16129\\
+   7	0.142857\\
+   8	0.125\\
+ 9.2	0.108696\\
+10.6	0.0943396\\
+12.2	0.0819672\\
+14.2	0.0704225\\
+16.8	0.0595238\\
+  20	0.05\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

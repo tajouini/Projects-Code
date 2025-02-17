@@ -1,0 +1,268 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+unbounded coords=jump,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=  12,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax=  12,
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=red]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+   1	   1	0.233333	0.233333\\
+   2	   2	0.266667	0.266667\\
+   3	   3	 0.3	 0.3\\
+   4	   4	0.333333	0.333333\\
+   5	   5	0.366667	0.366667\\
+   6	   6	 0.4	 0.4\\
+   7	   7	0.433333	0.433333\\
+   8	   8	0.466667	0.466667\\
+   9	   9	 0.5	 0.5\\
+  10	  10	0.533333	0.533333\\
+};
+\addlegendentry{test1}
+
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+ 0.8	1.09\\
+ 0.8	0.91\\
+ nan	 nan\\
+ 0.8	   1\\
+ 1.2	   1\\
+ nan	 nan\\
+ 1.2	1.09\\
+ 1.2	0.91\\
+ nan	 nan\\
+ 1.8	2.09\\
+ 1.8	1.91\\
+ nan	 nan\\
+ 1.8	   2\\
+ 2.2	   2\\
+ nan	 nan\\
+ 2.2	2.09\\
+ 2.2	1.91\\
+ nan	 nan\\
+ 2.8	3.09\\
+ 2.8	2.91\\
+ nan	 nan\\
+ 2.8	   3\\
+ 3.2	   3\\
+ nan	 nan\\
+ 3.2	3.09\\
+ 3.2	2.91\\
+ nan	 nan\\
+ 3.8	4.09\\
+ 3.8	3.91\\
+ nan	 nan\\
+ 3.8	   4\\
+ 4.2	   4\\
+ nan	 nan\\
+ 4.2	4.09\\
+ 4.2	3.91\\
+ nan	 nan\\
+ 4.8	5.09\\
+ 4.8	4.91\\
+ nan	 nan\\
+ 4.8	   5\\
+ 5.2	   5\\
+ nan	 nan\\
+ 5.2	5.09\\
+ 5.2	4.91\\
+ nan	 nan\\
+ 5.8	6.09\\
+ 5.8	5.91\\
+ nan	 nan\\
+ 5.8	   6\\
+ 6.2	   6\\
+ nan	 nan\\
+ 6.2	6.09\\
+ 6.2	5.91\\
+ nan	 nan\\
+ 6.8	7.09\\
+ 6.8	6.91\\
+ nan	 nan\\
+ 6.8	   7\\
+ 7.2	   7\\
+ nan	 nan\\
+ 7.2	7.09\\
+ 7.2	6.91\\
+ nan	 nan\\
+ 7.8	8.09\\
+ 7.8	7.91\\
+ nan	 nan\\
+ 7.8	   8\\
+ 8.2	   8\\
+ nan	 nan\\
+ 8.2	8.09\\
+ 8.2	7.91\\
+ nan	 nan\\
+ 8.8	9.09\\
+ 8.8	8.91\\
+ nan	 nan\\
+ 8.8	   9\\
+ 9.2	   9\\
+ nan	 nan\\
+ 9.2	9.09\\
+ 9.2	8.91\\
+ nan	 nan\\
+ 9.8	10.09\\
+ 9.8	9.91\\
+ nan	 nan\\
+ 9.8	  10\\
+10.2	  10\\
+ nan	 nan\\
+10.2	10.09\\
+10.2	9.91\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+   1	   1\\
+  10	  10\\
+};
+\addplot [color=green]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+   1	   2	 0.2	 0.2\\
+   2	   3	 0.2	 0.2\\
+   3	   4	 0.2	 0.2\\
+   4	   5	 0.2	 0.2\\
+   5	   6	 0.2	 0.2\\
+   6	   7	 0.2	 0.2\\
+   7	   8	 0.2	 0.2\\
+   8	   9	 0.2	 0.2\\
+   9	  10	 0.2	 0.2\\
+  10	  11	 0.2	 0.2\\
+};
+\addlegendentry{test2}
+
+\addplot [color=green, forget plot]
+  table[row sep=crcr]{%
+0.775	2.09\\
+0.775	1.91\\
+ nan	 nan\\
+0.775	   2\\
+1.225	   2\\
+ nan	 nan\\
+1.225	2.09\\
+1.225	1.91\\
+ nan	 nan\\
+1.75	3.09\\
+1.75	2.91\\
+ nan	 nan\\
+1.75	   3\\
+2.25	   3\\
+ nan	 nan\\
+2.25	3.09\\
+2.25	2.91\\
+ nan	 nan\\
+2.725	4.09\\
+2.725	3.91\\
+ nan	 nan\\
+2.725	   4\\
+3.275	   4\\
+ nan	 nan\\
+3.275	4.09\\
+3.275	3.91\\
+ nan	 nan\\
+ 3.7	5.09\\
+ 3.7	4.91\\
+ nan	 nan\\
+ 3.7	   5\\
+ 4.3	   5\\
+ nan	 nan\\
+ 4.3	5.09\\
+ 4.3	4.91\\
+ nan	 nan\\
+4.675	6.09\\
+4.675	5.91\\
+ nan	 nan\\
+4.675	   6\\
+5.325	   6\\
+ nan	 nan\\
+5.325	6.09\\
+5.325	5.91\\
+ nan	 nan\\
+5.65	7.09\\
+5.65	6.91\\
+ nan	 nan\\
+5.65	   7\\
+6.35	   7\\
+ nan	 nan\\
+6.35	7.09\\
+6.35	6.91\\
+ nan	 nan\\
+6.625	8.09\\
+6.625	7.91\\
+ nan	 nan\\
+6.625	   8\\
+7.375	   8\\
+ nan	 nan\\
+7.375	8.09\\
+7.375	7.91\\
+ nan	 nan\\
+ 7.6	9.09\\
+ 7.6	8.91\\
+ nan	 nan\\
+ 7.6	   9\\
+ 8.4	   9\\
+ nan	 nan\\
+ 8.4	9.09\\
+ 8.4	8.91\\
+ nan	 nan\\
+8.575	10.09\\
+8.575	9.91\\
+ nan	 nan\\
+8.575	  10\\
+9.425	  10\\
+ nan	 nan\\
+9.425	10.09\\
+9.425	9.91\\
+ nan	 nan\\
+9.55	11.09\\
+9.55	10.91\\
+ nan	 nan\\
+9.55	  11\\
+10.45	  11\\
+ nan	 nan\\
+10.45	11.09\\
+10.45	10.91\\
+};
+\addplot [color=green, forget plot]
+  table[row sep=crcr]{%
+   1	   2\\
+  10	  11\\
+};
+\end{axis}
+\end{tikzpicture}%
+\end{document}

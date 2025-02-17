@@ -1,0 +1,155 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.04333,0.74110,0.73941}%
+\definecolor{mycolor2}{rgb}{0.28101,0.32276,0.95789}%
+\definecolor{mycolor3}{rgb}{0.24220,0.15040,0.66030}%
+\definecolor{mycolor4}{rgb}{0.50440,0.79930,0.34800}%
+\definecolor{mycolor5}{rgb}{0.99565,0.74337,0.23715}%
+\definecolor{mycolor6}{rgb}{0.97690,0.98390,0.08050}%
+\definecolor{mycolor7}{rgb}{1.00000,1.00000,0.00000}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   1,
+xmax=   5,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   1,
+ymax=   5,
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot[fill=mycolor1, draw=black] table[row sep=crcr] {%
+%
+x	y\\
+   1	   1\\
+   1	   5\\
+   5	   5\\
+   5	   1\\
+};
+\addplot[fill=mycolor2, draw=black, forget plot] table[row sep=crcr] {%
+%
+x	y\\
+3.70237	   2\\
+   3	1.3229\\
+2.38732	   2\\
+   3	2.55249\\
+3.70237	   2\\
+};
+\addplot[fill=mycolor3, draw=black, forget plot] table[row sep=crcr] {%
+%
+x	y\\
+3.32068	   2\\
+   3	1.69086\\
+2.72027	   2\\
+   3	2.25224\\
+3.32068	   2\\
+};
+\addplot[fill=mycolor2, draw=black, forget plot] table[row sep=crcr] {%
+%
+x	y\\
+2.20604	   3\\
+   2	2.75046\\
+1.71736	   3\\
+   2	3.23788\\
+2.20604	   3\\
+};
+\addplot[fill=mycolor1, draw=black, forget plot] table[row sep=crcr] {%
+%
+x	y\\
+2.01668	   1\\
+2.05436	   2\\
+   2	2.10533\\
+1.00138	   2\\
+   1	1.12866\\
+};
+\addplot[fill=mycolor1, draw=black, forget plot] table[row sep=crcr] {%
+%
+x	y\\
+   1	4.98964\\
+1.00639	   4\\
+   2	3.85288\\
+2.73872	   3\\
+   3	2.85273\\
+   4	2.11873\\
+4.99189	   2\\
+   5	1.00163\\
+};
+\addplot[fill=mycolor4, draw=black, forget plot] table[row sep=crcr] {%
+%
+x	y\\
+3.44527	   3\\
+   4	2.65782\\
+4.39225	   3\\
+   4	3.60909\\
+3.88039	   4\\
+   3	4.77911\\
+2.20238	   4\\
+   3	3.14525\\
+3.44527	   3\\
+};
+\addplot[fill=mycolor5, draw=black, forget plot] table[row sep=crcr] {%
+%
+x	y\\
+2.46841	   4\\
+   3	3.43032\\
+3.58676	   4\\
+   3	4.51926\\
+2.46841	   4\\
+};
+\addplot[fill=mycolor6, draw=black, forget plot] table[row sep=crcr] {%
+%
+x	y\\
+2.73443	   4\\
+   3	3.7154\\
+3.29313	   4\\
+   3	4.25941\\
+2.73443	   4\\
+};
+\addlegendentry{data1}
+
+
+\addplot[area legend, mark size=8.0pt, mark=x, mark options={solid, fill=red, orange}, dotted, line width=4.0pt, draw=green, fill=red, draw opacity= 0.4, fill opacity= 0.2]
+table[row sep=crcr] {%
+x	y\\
+   2	   2\\
+   2	   3\\
+   4	   3\\
+   4	   2\\
+}--cycle;
+\addlegendentry{data2}
+
+\addplot [color=white, dotted, line width=6.0pt, mark size=7.0pt, mark=*, mark options={solid, fill=red, mycolor7}]
+  table[row sep=crcr]{%
+   3	 1.5\\
+ 3.5	 3.5\\
+};
+\addlegendentry{data3}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}

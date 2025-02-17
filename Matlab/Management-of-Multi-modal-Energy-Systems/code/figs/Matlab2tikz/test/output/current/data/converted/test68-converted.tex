@@ -1,0 +1,72 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.965\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   1,
+xmax=   3,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   1,
+ymax=   9,
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={display math old: $\alpha$ and $\sum_\alpha^\Omega$; inline math: $\alpha$ and $\sum_\alpha^\Omega$},
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot [color=mycolor1, mark=x, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+   1	   8\\
+   2	   3\\
+   3	   4\\
+};
+\addlegendentry{data1}
+
+\addplot [color=mycolor2, mark=x, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+   1	   1\\
+   2	   5\\
+   3	   9\\
+};
+\addlegendentry{data2}
+
+\addplot [color=mycolor3, mark=x, mark options={solid, mycolor3}]
+  table[row sep=crcr]{%
+   1	   6\\
+   2	   7\\
+   3	   2\\
+};
+\addlegendentry{data3}
+
+\node[right, align=left]
+at (axis cs:1.5,2) {$\int_0^x\!\int_{\Omega} \mathrm{d}F(u,v) \mathrm{d}\omega$};
+\end{axis}
+\end{tikzpicture}%
+\end{document}

@@ -1,0 +1,243 @@
+% This file was created by matlab2tikz.
+%
+\documentclass[tikz]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{amsmath}
+
+\newlength\figureHeight \setlength{\figureHeight}{6cm}
+\newlength\figureWidth \setlength{\figureWidth}{10cm}
+\begin{document}
+\definecolor{mycolor1}{rgb}{0.00000,1.00000,1.00000}%
+\definecolor{mycolor2}{rgb}{1.00000,0.00000,1.00000}%
+\definecolor{mycolor3}{rgb}{1.00000,1.00000,0.00000}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figureWidth,
+height=\figureHeight,
+at={(0\figureWidth,0\figureHeight)},
+scale only axis,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=   0,
+xmax=  11,
+xtick={   1,   2,   3,   4,   5,   6,   7,   8,   9,  10},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=   0,
+ymax= 140,
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=black}
+]
+\addplot[scatter, only marks, mark=x, color=blue, mark options={}, scatter/use mapped color=blue, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  10	 2.5\\
+   2	  10	3.53553\\
+   3	  10	4.33013\\
+   4	  10	   5\\
+   5	  10	5.59017\\
+   6	  10	6.12372\\
+   7	  10	6.61438\\
+   8	  10	7.07107\\
+   9	  10	 7.5\\
+  10	  10	7.90569\\
+};
+\addlegendentry{data1}
+
+\addplot[scatter, only marks, mark=diamond, color=red, mark options={}, scatter/use mapped color=red, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  20	4.31383\\
+   2	  20	6.10068\\
+   3	  20	7.47178\\
+   4	  20	8.62766\\
+   5	  20	9.64602\\
+   6	  20	10.5667\\
+   7	  20	11.4133\\
+   8	  20	12.2014\\
+   9	  20	12.9415\\
+  10	  20	13.6415\\
+};
+\addlegendentry{data2}
+
+\addplot[scatter, only marks, mark=o, color=green, mark options={}, scatter/use mapped color=green, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  30	 2.5\\
+   2	  30	3.53553\\
+   3	  30	4.33013\\
+   4	  30	   5\\
+   5	  30	5.59017\\
+   6	  30	6.12372\\
+   7	  30	6.61438\\
+   8	  30	7.07107\\
+   9	  30	 7.5\\
+  10	  30	7.90569\\
+};
+\addlegendentry{data3}
+
+\addplot[scatter, only marks, mark=*, color=mycolor1, mark options={}, scatter/use mapped color=mycolor1, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  40	0.833333\\
+   2	  40	1.17851\\
+   3	  40	1.44338\\
+   4	  40	1.66667\\
+   5	  40	1.86339\\
+   6	  40	2.04124\\
+   7	  40	2.20479\\
+   8	  40	2.35702\\
+   9	  40	 2.5\\
+  10	  40	2.63523\\
+};
+\addlegendentry{data4}
+
+\addplot[scatter, only marks, mark=+, color=mycolor2, mark options={}, scatter/use mapped color=mycolor2, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  50	 2.5\\
+   2	  50	3.53553\\
+   3	  50	4.33013\\
+   4	  50	   5\\
+   5	  50	5.59017\\
+   6	  50	6.12372\\
+   7	  50	6.61438\\
+   8	  50	7.07107\\
+   9	  50	 7.5\\
+  10	  50	7.90569\\
+};
+\addlegendentry{data5}
+
+\addplot[scatter, only marks, mark=asterisk, color=mycolor3, mark options={}, scatter/use mapped color=mycolor3, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  60	 2.5\\
+   2	  60	3.53553\\
+   3	  60	4.33013\\
+   4	  60	   5\\
+   5	  60	5.59017\\
+   6	  60	6.12372\\
+   7	  60	6.61438\\
+   8	  60	7.07107\\
+   9	  60	 7.5\\
+  10	  60	7.90569\\
+};
+\addlegendentry{data6}
+
+\addplot[scatter, only marks, mark=square, color=blue, mark options={}, scatter/use mapped color=blue, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  70	1.76777\\
+   2	  70	 2.5\\
+   3	  70	3.06186\\
+   4	  70	3.53553\\
+   5	  70	3.95285\\
+   6	  70	4.33013\\
+   7	  70	4.67707\\
+   8	  70	   5\\
+   9	  70	5.3033\\
+  10	  70	5.59017\\
+};
+\addlegendentry{data7}
+
+\addplot[scatter, only marks, mark=triangle, color=mycolor2, mark options={rotate=180}, scatter/use mapped color=mycolor2, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  80	1.66667\\
+   2	  80	2.35702\\
+   3	  80	2.88675\\
+   4	  80	3.33333\\
+   5	  80	3.72678\\
+   6	  80	4.08248\\
+   7	  80	4.40959\\
+   8	  80	4.71405\\
+   9	  80	   5\\
+  10	  80	5.27046\\
+};
+\addlegendentry{data8}
+
+\addplot[scatter, only marks, mark=triangle, color=black, mark options={}, scatter/use mapped color=black, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	  90	1.66667\\
+   2	  90	2.35702\\
+   3	  90	2.88675\\
+   4	  90	3.33333\\
+   5	  90	3.72678\\
+   6	  90	4.08248\\
+   7	  90	4.40959\\
+   8	  90	4.71405\\
+   9	  90	   5\\
+  10	  90	5.27046\\
+};
+\addlegendentry{data9}
+
+\addplot[scatter, only marks, mark=triangle, color=red, mark options={rotate=90}, scatter/use mapped color=red, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	 100	1.66667\\
+   2	 100	2.35702\\
+   3	 100	2.88675\\
+   4	 100	3.33333\\
+   5	 100	3.72678\\
+   6	 100	4.08248\\
+   7	 100	4.40959\\
+   8	 100	4.71405\\
+   9	 100	   5\\
+  10	 100	5.27046\\
+};
+\addlegendentry{data10}
+
+\addplot[scatter, only marks, mark=triangle, color=green, mark options={rotate=270}, scatter/use mapped color=green, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	 110	1.66667\\
+   2	 110	2.35702\\
+   3	 110	2.88675\\
+   4	 110	3.33333\\
+   5	 110	3.72678\\
+   6	 110	4.08248\\
+   7	 110	4.40959\\
+   8	 110	4.71405\\
+   9	 110	   5\\
+  10	 110	5.27046\\
+};
+\addlegendentry{data11}
+
+\addplot[scatter, only marks, mark=star, color=mycolor1, mark options={}, scatter/use mapped color=mycolor1, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	 120	 2.5\\
+   2	 120	3.53553\\
+   3	 120	4.33013\\
+   4	 120	   5\\
+   5	 120	5.59017\\
+   6	 120	6.12372\\
+   7	 120	6.61438\\
+   8	 120	7.07107\\
+   9	 120	 7.5\\
+  10	 120	7.90569\\
+};
+\addlegendentry{data12}
+
+\addplot[scatter, only marks, mark=star, color=blue, mark options={}, scatter/use mapped color=blue, visualization depends on={\thisrow{size} \as \perpointmarksize}, scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize}] table[row sep=crcr]{%
+x	y	size\\
+   1	 130	 2.5\\
+   2	 130	3.53553\\
+   3	 130	4.33013\\
+   4	 130	   5\\
+   5	 130	5.59017\\
+   6	 130	6.12372\\
+   7	 130	6.61438\\
+   8	 130	7.07107\\
+   9	 130	 7.5\\
+  10	 130	7.90569\\
+};
+\addlegendentry{data13}
+
+\end{axis}
+\end{tikzpicture}%
+\end{document}
