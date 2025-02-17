@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="80" d:DesignHeight="50"
+        x:Class="MyAvaloniaApp.MainWindow"
+        Title="Visualisation">
+    <!-- Use a StackPanel to organize elements vertically -->
+    <StackPanel Margin="20">
+        <TextBlock Text="Welcome to the calculator!" FontSize="24" Margin="250,0,0,30"/>
+        <TextBlock Text="Enter a number" FontSize="16" Margin="350,20,0,0"/>
+        <TextBox x:Name="NumberTextBox" 
+                 Width="50" 
+                 Watermark="" 
+                 HorizontalContentAlignment="Center" 
+                 FontWeight="Bold"
+                 Margin="-400,20,10,10"
+                 TextChanging="NumberTextBox_TextInput"
+                 />
+        <!-- ResultTextBlock to display the result or error message -->
+        <TextBlock Text="Result" FontSize="16" Margin="380,50,10,0"/>
+        <TextBox x:Name="ResultTextBlock" HorizontalContentAlignment="Center"  Width="300"  FontSize="16" FontWeight="Bold" Margin="-400,20,10,10" />
+        <!-- Add the Button element -->
+        <Button Content="+" HorizontalContentAlignment="Center" FontSize="24"  Width="50" Margin="200,50,10,10" Background="LightGreen" HorizontalAlignment="Left" Click="IncrementClick"/> 
+        <Button Content="-" HorizontalContentAlignment="Center" Width="50" FontSize="24" Margin="0,-50,0,10" Background="LightBlue" HorizontalAlignment="Center" Click="DecrementClick"/>
+        <Button Content="*" HorizontalContentAlignment="Center" Width="50" FontSize="24" Margin="200,50,10,10" VerticalAlignment="Bottom" Background="PaleVioletRed" HorizontalAlignment="Left" Click="DoubleClick"/>
+        <Button Content="rand" HorizontalContentAlignment="Center" FontSize="24" Width="80"  Margin="0,-50,0,10" VerticalAlignment="Bottom" Background="BurlyWood" HorizontalAlignment="Center" Click="RandAddClick"/>
+        <Button Content="Undo" HorizontalContentAlignment="Center" FontSize="24" Width="80" Margin="-400,50,0,10" HorizontalAlignment="Stretch" Click="UndoClick"/>
+    </StackPanel>
+    
+</Window>
